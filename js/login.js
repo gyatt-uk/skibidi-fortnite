@@ -1,11 +1,11 @@
 
-document.getElementById('create-account-form').addEventListener('submit', function(event) {
+document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
   
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
   
-    fetch('/api/create-account', {
+    fetch('/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -15,8 +15,8 @@ document.getElementById('create-account-form').addEventListener('submit', functi
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
-          // Redirect the user to the login page
-          window.location.href = '/login.html';
+          // Redirect the user to the home page, or wherever you want
+          window.location.href = '/index.html';
         } else {
           // Show the error message to the user
           document.getElementById('error-message').innerText = data.message;
