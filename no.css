@@ -48,7 +48,7 @@ h3 {
   padding-top: 15px;
 }
 .menudiv {
-  background-color: rgb(196, 209, 6);
+  background-color: rgb(209, 155, 6);
   font-size: 25px;
 }
 .tibyp {
@@ -201,7 +201,15 @@ button:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: transparent;
 } 
+.pb{
+  background: url(images/goldcube.jpg);
+  background-position: left;
+}
+.pp{
+  color: white;
+}
 
 #create-account-form {
   display: flex;
