@@ -50,6 +50,7 @@ h3 {
 .menudiv {
   background-color: rgb(209, 155, 6);
   font-size: 25px;
+  
 }
 .tibyp {
   background: url(images/gooning.jpg);
@@ -202,7 +203,14 @@ button:hover {
     justify-content: center;
     text-align: center;
     background: transparent;
-} 
+    overflow: hidden;
+    height: 150px;
+}
+
+.pimgcontainer img{
+  border-radius: 20px;
+    padding: 0;
+}
 .pb{
   background: url(images/goldcube.jpg);
   background-position: left;
@@ -256,3 +264,38 @@ button:hover {
   border: 1px solid black;
   cursor: pointer;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.fancy-btn {
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  animation: pulsing-btn 1s infinite;
+  transition: 1s;
+}
+
+.fancy-btn:hover {
+  animation: pulsing-btn 2s infinite;
+  background-color: rgb(217, 226, 85);
+
+}
+
+@keyframes pulsing-btn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
